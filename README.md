@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Vibe Coding Starter
+
+A modern and opinionated Next.js starter template with best practices and powerful development tools preconfigured.
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) with React 19
+- **UI:** [shadcn/ui](https://ui.shadcn.com/) - Accessible and customizable components
+- **Styling:** 
+  - [Tailwind CSS v4](https://tailwindcss.com/) with class-variance-authority
+  - OKLCH color system for better color handling
+- **Icons:** [Lucide Icons](https://lucide.dev/)
+- **Code Quality:**
+  - [Biome](https://biomejs.dev/) for formatting and linting
+  - [TypeScript](https://www.typescriptlang.org/) for type safety
+  - [Husky](https://typicode.github.io/husky/) for Git hooks
+  - [lint-staged](https://github.com/lint-staged/lint-staged) for pre-commit linting
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/next-vibe-coding-starter.git
+    cd next-vibe-coding-starter
+    ```
+
+2. Install dependencies:
+    ```bash
+    bun install
+    ```
+
+3. Run the development server:
+    ```bash
+    bun dev
+    ```
+
+4. Open browser and navigate to `http://localhost:3000`
+
+### Project Structure
+
+```
+src/
+├── app/         # App router pages and layouts
+├── lib/         # Utility functions and shared logic
+└── styles/      # Global styles and Tailwind configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `bun dev` - Start development server with Turbopack
+- `bun build` - Build production bundle
+- `bun start` - Start production server
+- `bun format` - Format code with Biome
+- `bun lint` - Lint code with Biome
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/) - The React Framework for Production
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- [Biome](https://biomejs.dev/) - The next-generation toolchain for web projects
