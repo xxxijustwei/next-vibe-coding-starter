@@ -5,10 +5,15 @@ A modern and opinionated Next.js starter template with best practices and powerf
 ## Tech Stack
 
 - **Framework:** [Next.js 15](https://nextjs.org/) with React 19
-- **UI:** [shadcn/ui](https://ui.shadcn.com/) - Accessible and customizable components
+- **Bundler:** [Rspack](https://rspack.dev/) - High-performance Rust-based bundler
+- **UI Components:** 
+  - [shadcn/ui](https://ui.shadcn.com/) - Accessible and customizable components
+  - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible UI primitives
 - **Styling:** 
   - [Tailwind CSS v4](https://tailwindcss.com/) with class-variance-authority
   - OKLCH color system for better color handling
+- **Animations:** [Motion](https://motion.dev/) - Production-ready animation library
+- **Dark Mode:** [next-themes](https://github.com/pacocoursey/next-themes) - Perfect dark mode support
 - **Icons:** [Lucide Icons](https://lucide.dev/)
 - **Code Quality:**
   - [Biome](https://biomejs.dev/) for formatting and linting
@@ -43,17 +48,30 @@ A modern and opinionated Next.js starter template with best practices and powerf
 ```
 src/
 ├── app/         # App router pages and layouts
+├── components/  # Reusable UI components
+├── hooks/       # Custom React hooks
 ├── lib/         # Utility functions and shared logic
 └── styles/      # Global styles and Tailwind configurations
 ```
 
 ### Scripts
 
-- `bun dev` - Start development server with Turbopack
-- `bun build` - Build production bundle
+- `bun dev` - Start development server with Rspack
+- `bun build` - Build production bundle (runs format and lint first)
 - `bun start` - Start production server
 - `bun format` - Format code with Biome
 - `bun lint` - Lint code with Biome
+
+## Features
+
+- ⚡ **High-Performance Bundler** - Powered by Rspack for faster builds
+- 🎨 **Modern UI Components** - Pre-configured shadcn/ui with Radix UI primitives
+- 🌓 **Dark Mode Support** - Built-in theme switching with next-themes
+- ✨ **Smooth Animations** - Motion library for production-ready animations
+- 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS v4
+- 🔧 **Developer Experience** - Biome for fast formatting and linting
+- 🎯 **Type Safety** - Full TypeScript support throughout
+- 🚀 **Pre-commit Hooks** - Automated code quality checks with Husky
 
 ## License
 
