@@ -13,7 +13,7 @@ import {
   useCurrentLocale,
   useScopedI18n,
 } from "@/locales";
-import { LanguagesIcon } from "lucide-react";
+import { EarthIcon, LanguagesIcon } from "lucide-react";
 
 export const LanguageToggle = () => {
   const t = useScopedI18n("locale");
@@ -25,8 +25,8 @@ export const LanguageToggle = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="size-10">
-          <LanguagesIcon className="!size-6" />
+        <Button variant="ghost" size="icon" className="size-8">
+          <EarthIcon className="!size-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent aria-label="Languages" className="min-w-fit">
