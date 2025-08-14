@@ -4,7 +4,7 @@ import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useScopedI18n } from "@/locales";
 
-const page = () => {
+const Page = () => {
   const t = useScopedI18n("intro");
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
@@ -22,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
