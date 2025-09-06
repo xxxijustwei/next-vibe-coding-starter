@@ -20,6 +20,7 @@ A modern and opinionated Next.js starter template with best practices and powerf
   - [TypeScript](https://www.typescriptlang.org/) for type safety
   - [Husky](https://typicode.github.io/husky/) for Git hooks
   - [lint-staged](https://github.com/lint-staged/lint-staged) for pre-commit linting
+- **Logging:** [Pino](https://github.com/pinojs/pino) with pino-pretty for pretty logging in development
 
 ## Getting Started
 
