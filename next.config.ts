@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   env: {
     GIT_COMMIT: execSync("git rev-parse HEAD").toString().trim(),
   },
+  output: "standalone",
   serverExternalPackages: ["pino", "pino-pretty"],
 };
 
