@@ -1,17 +1,9 @@
-// middleware.ts
-import { createI18nMiddleware } from "next-international/middleware";
+import createMiddleware from "next-intl/middleware";
 import { NextRequest } from "next/server";
-import { DEFAULT_LANGUAGE, LANGUAGES, detectLanguage } from "./locales";
+import { routing } from "./i18n/routing";
 
-const I18nMiddleware = createI18nMiddleware({
-  locales: LANGUAGES,
-  defaultLocale: DEFAULT_LANGUAGE,
-  urlMappingStrategy: "rewrite",
-  resolveLocaleFromRequest: detectLanguage,
-});
-
-export function middleware(request: NextRequest) {
-  return I18nMiddleware(request);
+export default function middleware(req: NextRequest) {
+  return createMiddleware(routing)(req);
 }
 
 export const config = {

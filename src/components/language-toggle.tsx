@@ -7,20 +7,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/wed/button";
-import {
-  LANGUAGES,
-  useChangeLocale,
-  useCurrentLocale,
-  useScopedI18n,
-} from "@/locales";
-import { EarthIcon, LanguagesIcon } from "lucide-react";
+import { LANGUAGES, usePathname, useRouter } from "@/i18n/routing";
+import { EarthIcon } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 export const LanguageToggle = () => {
-  const t = useScopedI18n("locale");
-  const currentLocale = useCurrentLocale();
-  const changeLocale = useChangeLocale({
-    preserveSearchParams: true,
-  });
+  const t = useTranslations("locale");
+  const currentLocale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <DropdownMenu>
@@ -33,7 +28,7 @@ export const LanguageToggle = () => {
         {LANGUAGES.map((locale) => (
           <DropdownMenuCheckboxItem
             key={locale}
-            onClick={() => changeLocale(locale)}
+            onClick={() => router.replace(pathname, { locale })}
             checked={currentLocale === locale}
           >
             {t(locale)}

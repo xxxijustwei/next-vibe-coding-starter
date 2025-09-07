@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { I18nProviderClient } from "@/locales/client";
+import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <I18nProviderClient locale={locale}>{children}</I18nProviderClient>
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
