@@ -7,15 +7,14 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LANGUAGES, usePathname, useRouter } from "@/i18n/routing";
+import { useI18n } from "@/i18n/hook";
+import { LANGUAGES } from "@/i18n/routing";
 import { EarthIcon } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export const LanguageToggle = () => {
   const t = useTranslations("locale");
-  const currentLocale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
+  const { currentLocale, handleChangeLocale } = useI18n();
 
   return (
     <DropdownMenu>
@@ -28,7 +27,7 @@ export const LanguageToggle = () => {
         {LANGUAGES.map((locale) => (
           <DropdownMenuCheckboxItem
             key={locale}
-            onClick={() => router.replace(pathname, { locale })}
+            onClick={() => handleChangeLocale(locale)}
             checked={currentLocale === locale}
           >
             {t(locale)}
