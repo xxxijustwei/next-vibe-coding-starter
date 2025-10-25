@@ -1,5 +1,5 @@
-import { getRequestConfig } from "next-intl/server";
 import { cookies, headers } from "next/headers";
+import { getRequestConfig } from "next-intl/server";
 import { DEFAULT_LANGUAGE, LANGUAGES, Language } from "./routing";
 
 export default getRequestConfig(async () => {

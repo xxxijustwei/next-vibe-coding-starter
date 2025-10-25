@@ -1,5 +1,5 @@
-import { logger } from "@/lib/logger";
 import { NextRequest, NextResponse } from "next/server";
+import { logger } from "@/lib/logger";
 
 export const GET = async (req: NextRequest) => {
   const log = logger.child({

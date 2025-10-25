@@ -1,4 +1,4 @@
-import { Action, ExternalToast, toast as sonnerToast } from "sonner";
+import { ExternalToast, toast as sonnerToast } from "sonner";
 
 export const toast = {
   info: (message: string, data?: ExternalToast) => {

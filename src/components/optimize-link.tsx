@@ -1,8 +1,8 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
 import { LinkProps } from "next/link";
 import { useState } from "react";
+import { Link } from "@/i18n/routing";
 
 type OptimizeLinkProps = Omit<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,

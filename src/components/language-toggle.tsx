@@ -1,5 +1,7 @@
 "use client";
 
+import { EarthIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,8 +11,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useI18n } from "@/i18n/hook";
 import { LANGUAGES } from "@/i18n/routing";
-import { EarthIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
 
 export const LanguageToggle = () => {
   const t = useTranslations("locale");

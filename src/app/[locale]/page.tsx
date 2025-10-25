@@ -1,8 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/mode-toggle";
-import { useTranslations } from "next-intl";
 
 const Page = () => {
   const t = useTranslations("intro");
