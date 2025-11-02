@@ -3,8 +3,8 @@
 import { Slot, Slottable } from "@radix-ui/react-slot";
 import { useCallbackRef } from "@radix-ui/react-use-callback-ref";
 import { cva, type VariantProps } from "class-variance-authority";
-import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import { Loader2Icon } from "lucide-react";
+import { AnimatePresence, domAnimation, LazyMotion, m } from "motion/react";
 import type * as React from "react";
 import { useCallback, useState } from "react";
 import { useRipple } from "@/hooks/use-ripple";
