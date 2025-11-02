@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "npm run format && npm run lint && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "format": "biome format --write --no-errors-on-unmatched",
     "lint": "biome lint --write --no-errors-on-unmatched",
@@ -19,7 +19,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.542.0",
     "motion": "^12.23.12",
-    "next": "15.5.2",
+    "next": "16.0.1",
     "next-intl": "^4.3.6",
     "next-themes": "^0.4.6",
     "nuqs": "^2.7.0",
@@ -31,7 +31,7 @@
     "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.0",
+    "@biomejs/biome": "2.3.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
