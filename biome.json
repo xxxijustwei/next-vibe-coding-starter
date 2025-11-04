@@ -31,7 +31,8 @@
         "noRedundantRoles": "off",
         "noSvgWithoutTitle": "off",
         "useHeadingContent": "off",
-        "useFocusableInteractive": "off"
+        "useFocusableInteractive": "off",
+        "noStaticElementInteractions": "off"
       },
       "suspicious": {
         "noArrayIndexKey": "off"
@@ -44,6 +45,9 @@
       },
       "style": {
         "useImportType": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
       }
     }
   },
