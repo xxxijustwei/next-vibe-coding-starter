@@ -28,8 +28,8 @@ const Page = () => {
                 <UnoptimizedLazyImage
                   src="https://github.com/xxxijustwei/next-vibe-coding-starter/raw/main/public/asahi.webp"
                   alt="asahi"
-                  className="rounded-2xl overflow-hidden"
-                  imgClassName="w-full h-full object-contain"
+                  className="w-full h-full rounded-2xl overflow-hidden"
+                  imgClassName="object-contain"
                 />
               </ViewTransition>
             </OptimizeLink>
