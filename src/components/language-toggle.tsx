@@ -20,7 +20,7 @@ export const LanguageToggle = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="size-8">
-          <EarthIcon className="!size-6" />
+          <EarthIcon className="size-6!" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent aria-label="Languages" className="min-w-fit">
